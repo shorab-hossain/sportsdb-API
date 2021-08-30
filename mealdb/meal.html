@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal db</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+      #error-message{
+          display: none;
+      }
+    </style>
+</head>
+<body>
+    <h3 class="text-center fw-bold text-success mt-4">Search your Favoraite Food</h3>
+    <div class="input-group mb-3 w-50 mx-auto m-5 border-3">
+        <button  onclick="searchFood()" class="btn btn-primary" type="button">Search</button>
+        <input id="search-feild" type="text" class="form-control p-3" placeholder="Search you want to food items" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <div id="error-message" class="bg-danger w-50 mx-auto p-3 text-white text-center m-4">   
+      </div>
+      <div id="detail-card" class="mx-auto w-25">
+      </div>
+
+    <div id="card-all" class="row row-cols-1 row-cols-md-3 g-4">
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="meal.js"></script>
+</body>
+</html>

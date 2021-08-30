@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My sports db</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url('img/download.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        #error-message{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="text-center fw-bold text-white mt-4">Search your Favoraite Team</h3>
+    <div class="input-group mb-3 w-50 mx-auto m-5 border-3">
+        <button  onclick="searchPlayer()" class="btn btn-primary" type="button">Search</button>
+        <input id="input-value" type="text" class="form-control p-3" placeholder="Search you want to food items" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <!-- //error message -->
+      <div id="error-message" class=" w-50 bg-danger text-center p-5 m-4 m-auto">
+      </div>
+      <!-- teamDetail -->
+      <!-- <div id="card-detail" class="card  m-auto m-4" style="width:'13rem'" >
+    </div> -->
+    <div id="card-detail" class="row  g-4 w-75 mx-auto m-4 border-3">
+    </div>
+    <!-- card-model -->
+      <div id="card-body" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto m-4">
+      </div>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="mysportsdb.js"></script>
+</body>
+</html>
